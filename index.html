@@ -5,8 +5,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
   <link rel="icon" type="image/png" href="./favicon.png">
-  <title>Leaflet Storymaps with Google Sheets Template</title>
+  <title>VGV. Durango-Mazatlán</title>
 
+  <!-- Load geojson (Added por el usuario)-->
+  <script type="text/javascript" src="UnidadesGeol_DurangoMazatlan.js"></script>
+  
   <!-- Load Leaflet CSS and JS-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -60,6 +63,8 @@
     scrollWheelZoom: false,
     tap: false
   });
+    // Variable declarada por el usuario
+    var unidades = L.geoJson(unidades).addTo(map);
   </script>
 
   <script type="text/javascript" src="google-doc-url.js"></script>
