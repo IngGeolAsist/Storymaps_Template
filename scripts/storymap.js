@@ -355,31 +355,13 @@ $(window).on('load', function() {
               }
 
               geoJsonOverlay = L.geoJson(geojson, {
-                  //style: function(feature) {
-                   //return {
-                     //fillColor: feature.properties.fillColor || props.fillColor || '#ffffff',
-                     //weight: feature.properties.weight || props.weight || 1,
-                     //opacity: feature.properties.opacity || props.opacity || 0.5,
-                     //color: feature.properties.color || props.color || '#cccccc',
-                     //fillOpacity: feature.properties.fillOpacity || props.fillOpacity || 0.5,
-                  style:function(feature){
-		              switch (feature.properties.inciso){
-			              case 'cp': return {color:'#e6e7e8', "weight": 0, fillOpacity: .5};
-			              case 'lpb': return {color:'#8cd1d5', "weight": 0, fillOpacity: .5};			
-			              case 'b': return {color:'#8384f2', "weight": 0, fillOpacity: .5};
-			              case 'gcf': return {color:'#f2f2aa', "weight": 0, fillOpacity: .5};
-			              case 'e': return {color:'#a475ab', "weight": 0, fillOpacity: .5};
-			              case 'omd': return {color:'#fccf76', "weight": 0, fillOpacity: .5};
-			              case 'omir': return {color:'#f381a0', "weight": 0, fillOpacity: .5};
-			              case 'eoi': return {color:'#919191', "weight": 0, fillOpacity: .5};
-			              case 'evr': return {color:'#81c498', "weight": 0, fillOpacity: .5};
-			              case 'eir': return {color:'#f47171', "weight": 0, fillOpacity: .5};
-			              case 'lv': return {color:'#d6fdc2', "weight": 0, fillOpacity: .5};
-			              case 'lir': return {color:'#935d5d', "weight": 0, fillOpacity: .5};
-			              case 'plb': return {color:'#c0b09c', "weight": 0, fillOpacity: .5};
-			              case 'lmb': return {color:'#91c8f3', "weight": 0, fillOpacity: .5};
-			              }
-			              },
+                  style: function(feature) {
+                   return {
+                     fillColor: feature.properties.fillColor || props.fillColor || '#ffffff',
+                     weight: feature.properties.weight || props.weight || 1,
+                     opacity: feature.properties.opacity || props.opacity || 0.5,
+                     color: feature.properties.color || props.color || '#cccccc',
+                     fillOpacity: feature.properties.fillOpacity || props.fillOpacity || 0.5,
                   }
                 }
               }).addTo(map);
