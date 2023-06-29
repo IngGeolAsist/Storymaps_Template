@@ -297,8 +297,8 @@ $(window).on('load', function() {
           $('.chapter-container').removeClass("in-focus").addClass("out-focus");
           $('div#container' + i).addClass("in-focus").removeClass("out-focus");
 
-          currentlyInFocus = i;
-          markActiveColor(currentlyInFocus);
+          //currentlyInFocus = i;
+          //markActiveColor(currentlyInFocus);
 
           // Remove overlay tile layer if needed
           if (map.hasLayer(overlay)) {
