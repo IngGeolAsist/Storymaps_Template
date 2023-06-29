@@ -119,19 +119,19 @@ $(window).on('load', function() {
 
     var markers = [];
 
-    var markActiveColor = function(k) {
+    //var markActiveColor = function(k) {
       /* Removes marker-active class from all markers */
-      for (var i = 0; i < markers.length; i++) {
-        if (markers[i] && markers[i]._icon) {
-          markers[i]._icon.className = markers[i]._icon.className.replace('', '');
+      //for (var i = 0; i < markers.length; i++) {
+        //if (markers[i] && markers[i]._icon) {
+          //markers[i]._icon.className = markers[i]._icon.className.replace('', '');
 
-          if (i == k) {
+          //if (i == k) {
             /* Adds marker-active class, which is orange, to marker k */
-            markers[k]._icon.className += '';
-          }
-        }
-      }
-    }
+            //markers[k]._icon.className += '';
+          //}
+        //}
+      //}
+    //}
 
     var pixelsAbove = [];
     var chapterCount = 0;
