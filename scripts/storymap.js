@@ -117,7 +117,7 @@ $(window).on('load', function() {
       }).addTo(map);
     }
 
-    var markers = [];
+    //var markers = [];
 
     //var markActiveColor = function(k) {
       /* Removes marker-active class from all markers */
