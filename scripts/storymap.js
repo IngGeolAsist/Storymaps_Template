@@ -354,7 +354,8 @@ $(window).on('load', function() {
                 //}
               //}
 
-              //geoJsonOverlay = L.geoJson(geojson, {
+              geoJsonOverlay = L.geoJson(
+                //geojson, {
                   //style: function(feature) {
                    //return {
                      //fillColor: feature.properties.fillColor || props.fillColor || '#ffffff',
