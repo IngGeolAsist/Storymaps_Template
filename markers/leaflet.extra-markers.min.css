@@ -7,7 +7,7 @@
  * @version 1.1.0
  */
 .extra-marker{
-  background:url('images/markers_default.png') no-repeat 0 0;
+  background:url('images/markers_default.png') no-repeat 0 -46;
   width:35px;
   height:46px;
   position:absolute;
@@ -18,7 +18,7 @@
 }
 
 .extra-marker-shadow{
-  background:url('images/markers_shadow.png') no-repeat 0 0;
+  background:url('images/markers_shadow.png') no-repeat 0 -46;
   width:36px;
   height:16px}
 
